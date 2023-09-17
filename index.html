@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href="assets/css/style.css">
+    <link rel = "stylesheet" href = "assets/css/base.css">
+    <link
+      rel="stylesheet"
+      href="https://wowjs.uk/css/libs/animate.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12 col-lg-12">
+              <div class="header__wrap">
+                <div class="header__logo">
+                  <a href="/">
+                    <img src="assets/images/logo.png" alt="Logo">
+                  </a>
+                </div>
+  
+                <div class="header__menu" id = "menu">
+                  <ul class = "menu-header">
+                    <li>
+                      <a href="#welcome">Home</a>
+                    </li>
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Work Process</a>
+                    </li>
+                    <li>
+                      <a href="#">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#">Pricing Tables</a>
+                    </li>
+                    
+                    <li>
+                      <a href="#">Blog Entries</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="header__menu-mobi" id = "menu-button">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <script>
+        const button = document.querySelector("#menu-button");
+        const menu = document.querySelector("#menu");
+        button.addEventListener("click" , function() {
+            menu.classList.toggle("show-menu");
+        })
+      </script>
+      <style>
+        @media (max-width:991.98px){
+        .header .inner-logo{
+            width:100%;
+            padding:0px 20px;
+        }
+        .header ul li{
+            width:100%;
+            padding: 15px 0;
+            border-bottom: 1px solid #1e1e1e2b;
+            text-align: center;
+            margin-left: 0;
+        }
+        .header .inner-wrap{
+            display:flex;
+            flex-direction: column;
+        }
+        .header #menu.show-menu{
+            object-fit: cover;
+            display:block;
+            height:47vh;
+            visibility: visible;
+            width:100%;
+        }
+        .header #menu.show-menu{
+            flex-direction: column;
+        }
+        .header #menu.show-menu .menu-header{
+            flex-direction: column;
+        }
+        .header #menu{
+            justify-content: space-evenly;
+        }
+        .header #menu-header.show-menu li{
+            width: 100%;
+            height: 50px;
+            border-top: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease 0s;
+        } 
+        .header .inner-wrap{
+            padding-left:0;
+            padding-right:0;
+        }
+    }
+      </style>
+
+    <div class = "section1" id = "welcome">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-12">
+                    <h1>We provide the best <strong>strategy</strong><br>to grow up your<strong> business</strong></h1>
+                    <p>Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo<br> for your company at absolutely free of charge</p>
+                    <a href = "#features" class = "button">DISCOVER MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section2" id = "about">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class = "section2__item wow bounceInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                        <div class = "section2__icon">
+                            <img src = "assets/images/featured-item-01.png">
+                        </div>
+                        <div class = "section2__title">
+                            Modern Strategy
+                        </div>
+                        <div class = "section2__content">
+                            Customize anything in this template to <br>fit your website needs
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class = "section2__item wow bounceInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
+                        <div class = "section2__icon">
+                            <img src = "assets/images/featured-item-01.png">
+                        </div>
+                        <div class = "section2__title">
+                            Best Relationship
+                        </div>
+                        <div class = "section2__content">
+                            Contact us immediately if you have a <br> question in mind
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class = "section2__item wow bounceInUp" data-wow-duration="1.2s" data-wow-delay="0.6s">
+                        <div class = "section2__icon">
+                            <img src = "assets/images/featured-item-01.png">
+                        </div>
+                        <div class = "section2__title">
+                            Ultimate Marketing
+                        </div>
+                        <div class = "section2__content">
+                            You just need to tell your friends <br>about our free templates
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section3" id = "work-process">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 section3__image">
+                    <img src = "assets/images/left-image.png">
+                </div>
+                <div class = "col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <h2>Let’s discuss about you project</h2>
+                    <p>Nullam sit amet purus libero. Etiam ullamcorper nisl <br> ut augue blandit, at finibus leo efficitur. Nam gravida purus non sapien auctor, ut aliquam magna ullamcorper.</p>
+                </div>
+            </div> 
+            
+            <div class = "row">
+                <div class = "col-xl-12">
+                    <hr>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
+                    <h2>We can help you to grow your business</h2>
+                    <p>Aenean pretium, ipsum et porttitor auctor, metus <br> ipsum iaculis nisi, a bibendum lectus libero vitae <br> urna. Sed id leo eu dolor luctus congue sed eget <br> ipsum. Nunc nec luctus libero. Etiam quis dolor elit.</p>
+                </div>
+                <div class = "col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 section3__image">
+                    <img src = "assets/images/right-image.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section4">
+        <div class = "container">
+            <div class = "section4__content">
+                <div class = "row">
+                    <div class = "col-xl-12">
+                    <h1>Work Process</h1>
+                    <p>Aenean nec tempor metus. Maecenas ligula dolor, commodo <br> in imperdiet interdum, vehicula ut ex. Donec ante diam.</p></div>
+                </div>
+            </div>
+
+            <div class = "section4__box">
+                <div class = "row">
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Get Ideas</strong><br>
+                            <span>Godard <br> pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Sketch Up</strong><br>
+                            <span>Godard <br> pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Discuss</strong> <br>
+                            <span>Godard <br> pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Revise</strong> <br>
+                            <span>Godard <br> pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Approve</strong> <br>
+                            <span>Godard <br> pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+
+                    <div class = "section4__mini-box-1 col-xl-2 col-lg-3 col-md-6">
+                        <a href = "#" class = "section4__mini-box">
+                            <img src = "assets/images/work-process-item-01.png"> <br>
+                            <strong>Launch</strong> <br>
+                            <span>Godard <br>pabst prism fam cliche.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section5">
+        <div class = "container">
+            <div class = "section5__content">
+            <div class = "row">
+                <div class = "col-xl-12">
+                    <h1>What do they say?</h1>
+                    <p>Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, <br> at accumsan elit eros a turpis. Ut sagittis lectus libero.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class ="section5__box">
+            <div class = "row">
+                <div class = "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class = "section5__team">
+                        <img class = "section5__hinhanh" src = "assets/images/work-process-item-01.png">
+                        <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus <br>odio.</p>
+                        <div class = "section5__information">
+                        <div class = "section5__team-image">
+                            <img src = "assets/images/60x60 .png">               
+                        </div>
+                        <div class = "section5__team-info">
+                            <h3>Catherine Soft</h3>
+                            <span>Managing director</span>
+                        </div></div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class = "section5__team">
+                        
+                        <img class = "section5__hinhanh" src = "assets/images/work-process-item-01.png">
+                        <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
+                        <div class = "section5__information">
+                        <div class = "section5__team-image">
+                            <img src = "assets/images/60x60 .png">               
+                        </div>
+                        <div class = "section5__team-info">
+                            <h3>Kevin Wood</h3>
+                            <span>Digital director</span>
+                        </div></div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class = "section5__team">
+                        <img class = "section5__hinhanh" src = "assets/images/work-process-item-01.png">
+                        <p>Quisque diam odio, maximus ac consectetur eu, auctor non lorem. Cras quis est non ante ultrices molestie. Ut vehicula et diam at aliquam.</p>
+                        <div class = "section5__information">
+                        <div class = "section5__team-image">
+                            <img src = "assets/images/60x60 .png">               
+                        </div>
+                        <div class = "section5__team-info">
+                            <h3>David Martin</h3>
+                            <span>Website Manager</span>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class ="section6">
+        <div class = "container">
+            <div class = "section6__title">
+                <h2>Pricing Plans</h2>
+                <p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna <br>quis arcu elementum, quis congue risus volutpat.</p>
+            </div>
+
+            <div class = "section6__content">
+                <div class = "row">
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class = "section6__item">
+                        <div class = "section6__title">
+                            Starter
+                        </div>
+                        <div class = "section6__box">
+                            <h2>$14.50</h2>
+                            <span>monthly</span>
+                        </div>
+                        <div class ="section6__list">
+                            <ul>   
+                                <li>60 GB space</li> 
+                                <li>600 GB transfer</li> 
+                                <li>Pro Design Panel</li> 
+                                <li class = "active">15-minute support</li> 
+                                <li class = "active">Unlimited Emails</li> 
+                                <li class = "active">24/7 Security</li> 
+                           </ul>  
+                        </div> <br>
+                        <div class = "button2">
+                        <a href = "#" class = "button1">PURCHASE NOW</a></div>
+                    </div></div>
+
+                    <div class = "col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class ="section6__item ">
+                        <div class = "section6__title">
+                            Premium
+                        </div>
+                        <div class = "section6__box section6__item-2">
+                            <h2>$21.50</h2>
+                            <span>monthly</span>
+                        </div>
+                        <div class ="section6__list">
+                            <ul>   
+                                <li>120 GB space</li> 
+                                <li>1200 GB transfer</li> 
+                                <li>Pro Design Panel</li> 
+                                <li>15-minute support</li> 
+                                <li class = "active">Unlimited Emails</li> 
+                                <li class = "active">24/7 Security</li> 
+                           </ul> 
+                        </div><br>
+                        <a href = "#" class = "button1">PURCHASE NOW</a>
+                    </div></div>
+
+                    <div class = "col-xl-4 col-lg-6">
+                        <div class = "section6__item">
+                        <div class = "section6__title">
+                            Advanced
+                        </div>
+                        <div class = "section6__box">
+                            <h2>$42.00</h2>
+                            <span>monthly</span>
+                        </div>
+                        <div class ="section6__list">
+                            <ul>   
+                                <li>250 GB space</li> 
+                                <li>5000 GB transfer</li> 
+                                <li>Pro Design Panel</li> 
+                                <li>15-minute support</li> 
+                                <li>Unlimited Emails</li> 
+                                <li>24/7 Security</li> 
+                           </ul> 
+                        </div> <br>
+                        <a href = "#" class = "button1">PURCHASE NOW</a>
+                    </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section7">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class = "section7__item section7__decoration">
+                        <div class = "section7__content">
+                        <strong>126</strong> <br>
+                        <span>Projects</span></div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class = "section7__item section7__top">
+                        <div class = "section7__content">
+                        <strong>63</strong> <br>
+                        <span>Happy Clients</span></div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class = "section7__item section7__decoration">
+                        <div class = "section7__content">
+                        <strong>18</strong> <br>
+                        <span>Awards Win</span></div>
+                    </div>
+                </div>
+
+                <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class = "section7__item">
+                        <div class = "section7__content">
+                        <strong>27</strong> <br>
+                        <span>Countries</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section8">
+        <div class = "container">
+            <div class = "section8__title">
+                <div class = "row">
+                    <div class = "col-xl-12">
+                        <h1>Blog Entries</h1>
+                        <p>Integer molestie aliquam gravida. Nullam nec arcu finibus, imperdiet <br> nulla vitae, placerat nibh. Cras maximus venenatis molestie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "section8__content">
+                <div class = "row">
+                    <div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                        <div class = "section8__image">
+                            <img src = "assets/images/blog-item-01.png">
+                        </div>
+                        <div class = "section8__desc">
+                            <a href = "#">
+                            <h2>Vivamus ac vehicula dui</h2></a>
+                            <p>Cras aliquet ligula dui, vitae fermentum velit tincidunt<br> id. Praesent eu finibus nunc. Nulla in sagittis eros. <br> Aliquam egestas augue.</p>
+                        </div>
+
+                        <a href = "#" class = "button1">READ MORE</a>
+                    </div>
+
+                    <div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                        <div class = "section8__image">
+                            <img src = "assets/images/blog-item-02.png">
+                        </div>
+                        <div class = "section8__desc">
+                            <a href = "#"><h2>Phasellus convallis augue</h2></a>
+                            <p>Cras aliquet ligula dui, vitae fermentum velit tincidunt<br> id. Praesent eu finibus nunc. Nulla in sagittis eros. <br> Aliquam egestas augue.</p>
+                        </div>
+
+                        <a href = "#" class = "button1">READ MORE</a>
+                    </div>
+
+                    <div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                        <div class = "section8__image">
+                            <img src = "assets/images/blog-item-03.png">
+                        </div>
+                        <div class = "section8__desc">
+                            <a href = "#">
+                            <h2>Phasellus convallis augue
+                            </h2></a>
+                            <p>Cras aliquet ligula dui, vitae fermentum velit tincidunt<br> id. Praesent eu finibus nunc. Nulla in sagittis eros. <br> Aliquam egestas augue.</p>
+                        </div>
+
+                        <a href = "#" class = "button1">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section9">
+        <div class = "container">
+            <div class = "section9__title">
+                <h2>Talk To Us</h2>
+                <p>Maecenas pellentesque ante faucibus lectus vulputate  sollicitudin.<br> Cras feugiat hendrerit semper.</p>
+            </div>
+            <div class = "row">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <h5>Keep in touch</h5>
+                    <p>110-220 Quisque diam odio, maximus ac <br> consectetur eu, 10260 <br>auctor non lorem</p>
+                    <p>You are NOT allowed to re-distribute <br> Softy Pinko template on any template <br> collection websites.<br> Thank you.</p>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-6">
+                    <div class = "section9__contact-form">
+                        <form id = "contact" action method = "get">
+                            <div class = "row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <input name = "name" type = "text" class = "form-control" id = "name" placeholder="Full Name" required>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <input name = "email" type = "text" class = "form-control" id = "email" placeholder="E-Mail Address" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name = "textarea" type = "text" class = "form-control" id = "message" placeholder="Your Message"required></textarea>
+                                </div>
+                                <div class="col-12">
+                                <a href = "#" class = "button1">SEND MESSAGES</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-xl-12">
+                    <ul class = "footer__social">
+                        <li><a href = "#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href = "#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href ="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href = "#"><i class="fa-solid fa-rss"></i></a></li>
+                        <li><a href = "#"><i class="fa-brands fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-xl-12">
+                    <p class = "footer__copyright">COPYRIGHT © 2020 SOFTY PINKO COMPANY - DESIGN: TEMPLATEMO</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+</body>
+</html>
